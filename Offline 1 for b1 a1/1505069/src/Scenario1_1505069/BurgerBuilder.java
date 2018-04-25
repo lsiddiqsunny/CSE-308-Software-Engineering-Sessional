@@ -10,7 +10,7 @@ public class BurgerBuilder {
         System.out.println("How many burger you want? ");
         int num=sc.nextInt();
         for(int i=1;i<=num;i++){
-            System.out.println("What kind of burger you want?\n1.Chicken\n2.Beef\n");
+            System.out.println("What kind of burger you want?\n1.Chicken\n2.Beef");
             int op=sc.nextInt();
             if(op==1){
                 System.out.println("Choose option for your chicken burger:\n1.Tandori Chicken Burger\n2.Chicken Cheese Burger\n3.Hot BBQ Burger");
@@ -37,9 +37,9 @@ public class BurgerBuilder {
 
             }
         }
-        System.out.println("Please check your ordered items:\n");
+        System.out.println("\nPlease check your ordered items:\n");
         b.showOrder();
-        System.out.println("Net payment:  "+b.getCost());
+        System.out.println("\n----------------------------------\nNet payment:  "+b.getCost());
 
        return b;
     }

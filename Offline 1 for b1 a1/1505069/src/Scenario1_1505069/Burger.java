@@ -19,7 +19,7 @@ public class Burger {
     public void showOrder(){
         int co=1;
         for(BurgerItem item:items){
-            System.out.println(co+". "+ item.burgername()+" Patty: "+item.patty()+ " Cheese: "+item.cheese()+" Sauce: "+item.sauce()+ " Price: "+item.price());
+            System.out.println(co+".  "+ item.burgername()+" \n    Patty: "+item.patty()+ " \n    Cheese: "+item.cheese()+" \n    Sauce: "+item.sauce()+ " \n    Price: "+item.price());
             co++;
         }
 

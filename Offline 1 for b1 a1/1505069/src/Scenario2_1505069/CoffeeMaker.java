@@ -3,7 +3,7 @@ package Scenario2_1505069;
 import java.util.Scanner;
 
 public class CoffeeMaker {
-    public static Coffee prepareCoffe(){
+    public  Coffee prepareCoffe(){
         Coffee c=null;
         System.out.println("Do you prefer sugar? Yes/No ? ");
         Scanner sc=new Scanner(System.in);

@@ -1,6 +1,6 @@
 public class ClosingVendingMachine implements State {
     @Override
-    public void doAction(VendingMachine vendingMachine) {
-
+    public void doAction() {
+        System.out.println("Closing Vending Machine.\n");
     }
 }

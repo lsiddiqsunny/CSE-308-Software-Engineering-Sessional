@@ -1,3 +1,3 @@
 public interface State {
-    void doAction(VendingMachine vendingMachine);
+    void doAction();
 }

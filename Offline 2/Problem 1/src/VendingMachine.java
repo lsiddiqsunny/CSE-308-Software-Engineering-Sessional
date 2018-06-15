@@ -1,7 +1,9 @@
 public class VendingMachine {
     private  State state;
-    public VendingMachine(){
+    int currentMoney;
+    public VendingMachine(int cm){
         state=null;
+        this.currentMoney=cm;
     }
     public void setState(State state){
         this.state=state;

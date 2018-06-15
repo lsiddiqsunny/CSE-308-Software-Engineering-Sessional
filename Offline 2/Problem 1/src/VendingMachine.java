@@ -1,6 +1,6 @@
-public class Context {
+public class VendingMachine {
     private  State state;
-    public  Context(){
+    public VendingMachine(){
         state=null;
     }
     public void setState(State state){

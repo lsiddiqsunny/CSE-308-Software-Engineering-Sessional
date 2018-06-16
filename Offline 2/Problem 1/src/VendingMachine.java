@@ -1,7 +1,7 @@
 public class VendingMachine {
     private  State state;
-    int currentMoney;
-    Product[] product;
+    private int currentMoney;
+    private Product[] product;
     public VendingMachine(int cm){
         state=null;
         this.currentMoney=cm;

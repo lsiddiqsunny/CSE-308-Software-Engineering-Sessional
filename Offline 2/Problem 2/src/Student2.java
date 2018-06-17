@@ -1,6 +1,7 @@
 public class Student2 extends Student {
-    String id,email;
-    Student2(String roll,String mail){
+    String name,id,email;
+    Student2(String n,String roll,String mail){
+        name=n;
         id=roll;
         email=mail;
     }
@@ -12,5 +13,10 @@ public class Student2 extends Student {
     @Override
     String getId() {
         return id;
+    }
+
+    @Override
+    String getName() {
+        return name;
     }
 }

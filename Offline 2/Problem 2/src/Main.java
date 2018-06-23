@@ -4,9 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         InfoTransferSystem cr=new InfoTransferSystem();
-        Student1 s1=new Student1("A","1","1@buet.ac.bd");
-        Student1 s2=new Student1("B","2","2@buet.ac.bd");
-        Student1 s3=new Student1("C","3","1@buet.ac.bd");
+        Student student[]=new Student[3];
+        student[0]=new Student1("A","1","1@buet.ac.bd");
+        student[1]=new Student1("B","2","2@buet.ac.bd");
+        student[2]=new Student1("C","3","1@buet.ac.bd");
         while(true){
             System.out.println("Choose an option : \n1.Register A Student\n" +
                     "2.Unregister A Student\n" +
@@ -18,19 +19,12 @@ public class Main {
             n=sc.nextInt();
             if(n==1){
                 System.out.println("Choose a student : \n" +
-                        "1. A , id = 1 \n" +
-                        "2. B , id = 2 \n" +
-                        "3. C , id =3 \n");
+                student[0].getId()+" "+student[0].getName()+"\n"+
+                student[1].getId()+" "+student[1].getName()+"\n"+
+                student[2].getId()+" "+student[2].getName()+"\n");
                 n=sc.nextInt();
-                if(n==1){
-                    cr.register(s1);
-
-                }
-                else if(n==2){
-                    cr.register(s2);
-                }
-                else if(n==3){
-                    cr.register(s3);
+                if(n<=3){
+                    cr.register(student[n-1]);
                 }
                 else{
                     System.out.println("Wrong choice.\n");
@@ -39,21 +33,13 @@ public class Main {
             }
             else if(n==2){
                 System.out.println("Choose a student : \n" +
-                        "1. A , id = 1 \n" +
-                        "2. B , id = 2 \n" +
-                        "3. C , id =3 \n");
+                        student[0].getId()+" "+student[0].getName()+"\n"+
+                        student[1].getId()+" "+student[1].getName()+"\n"+
+                        student[2].getId()+" "+student[2].getName()+"\n");
                 n=sc.nextInt();
-                if(n==1){
-                    cr.unregister(s1);
-
+                if(n<=3){
+                    cr.unregister(student[n-1]);
                 }
-                else if(n==2){
-                    cr.unregister(s2);
-                }
-                else if(n==3){
-                    cr.unregister(s3);
-                }
-
                 else{
                     System.out.println("Wrong choice.\n");
                 }

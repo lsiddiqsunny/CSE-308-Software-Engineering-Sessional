@@ -9,7 +9,7 @@ public class VendingMachine {
     }
     public void setProduct(){
 
-        product[0]=new Pepsi(10,16);
+        product[0]=new Pepsi(1,16);
         product[1]=new Cokacola(15,18);
         product[2]=new Sevenup(20,15);
     }
